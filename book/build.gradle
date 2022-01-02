@@ -52,3 +52,7 @@ sourceSets {
         }
     }
 }
+// for QueryDSL
+task cleanGeneatedDir(type: Delete) {
+    delete file('src/main/generated')
+}
