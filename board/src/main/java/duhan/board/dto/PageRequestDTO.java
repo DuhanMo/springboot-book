@@ -1,4 +1,4 @@
-package duhan.book.dto;
+package duhan.board.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

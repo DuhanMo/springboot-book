@@ -35,4 +35,26 @@ class BoardServiceTest {
             System.out.println("boardDTO = " + boardDTO);
         }
     }
+
+    @Test
+    void testGet() {
+        BoardDTO boardDTO = boardService.get(100L);
+        System.out.println("boardDTO = " + boardDTO);
+    }
+
+    @Test
+    void testRemove() {
+        Long bno = 2L;
+        boardService.removeWithReplies(bno);
+    }
+
+    @Test
+    void testModify() {
+        BoardDTO boardDTO = BoardDTO.builder()
+                .bno(3L)
+                .title("modify test")
+                .content("modify test")
+                .build();
+        boardService.modify(boardDTO);
+    }
 }

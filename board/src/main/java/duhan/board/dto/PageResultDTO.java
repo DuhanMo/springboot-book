@@ -1,4 +1,4 @@
-package duhan.book.dto;
+package duhan.board.dto;
 
 import lombok.Data;
 import org.springframework.data.domain.Page;
